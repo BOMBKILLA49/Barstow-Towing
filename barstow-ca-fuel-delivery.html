@@ -59,28 +59,29 @@
     <div id="canvas">
         <div id="box_wrapper">
 
-			<header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-12 text-left text-md-center">
-							<div class="logo_wrapper">
+            <!-- FIXED NAVIGATION MENU ONLY -->
+            <header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
 
-								<a href="./" class="logo">
-									<img src="images/logo.png" alt="">
-									<span class="logo_text">
-										<span class="highlight">BARSTOW TOWING</span>
-										<span>24/7 Heavy Duty Towing Services</span>
-									</span>
-								</a>
+                            <!-- Logo (centered on mobile, left on desktop) -->
+                            <div class="logo_wrapper text-center text-md-left inline-block">
+                                <a href="./" class="logo">
+                                    <img src="images/logo.png" alt="">
+                                    <span class="logo_text">
+                                        <span class="highlight">BARSTOW TOWING</span>
+                                        <span>24/7 Heavy Duty Towing Services</span>
+                                    </span>
+                                </a>
+                            </div>
 
-							</div>
-							<!-- header toggler -->
-							<span class="toggle_menu">
-								<span></span>
-							</span>
-                            <!-- main nav start -->
-                            <nav class="mainmenu_wrapper">
-                                <ul class="mainmenu nav sf-menu">
+                            <!-- Mobile menu toggle -->
+                            <span class="toggle_menu"><span></span></span>
+
+                            <!-- Main Navigation - now properly positioned -->
+                            <nav class="mainmenu_wrapper text-center text-md-right">
+                                <ul class="mainmenu nav sf-menu inline-block">
                                     <li class="active">
                                         <a href="#box_wrapper">Home</a>
                                     </li>
@@ -88,7 +89,7 @@
                                         <a href="#about">About</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">States</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">States</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-submenu">
                                                 <a href="#">New Mexico</a>
@@ -121,7 +122,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="barstow-ca-towing.html">Car Towing</a></li>
                                             <li><a href="barstow-ca-heavy-duty-towing.html">Heavy Duty Towing</a></li>
@@ -140,10 +141,12 @@
                                 </ul>
                             </nav>
                             <!-- eof main nav -->
-						</div>
-					</div>
-				</div>
-			</header>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END OF FIXED NAVIGATION -->
 
             <!-- Hero Section -->
             <section class="page_breadcrumbs cs background_cover section_padding_top_100 section_padding_bottom_100" style="background-image:url(images/barstow-ca-fuel-delivery-hero.jpg);background-position:center;">
@@ -294,4 +297,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
