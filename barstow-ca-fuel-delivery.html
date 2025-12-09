@@ -183,10 +183,11 @@
                                 <a href="tel:7603882591" class="theme_button color1 big_button">(760) 388-2591 – Call Now for Immediate Fuel</a>
                             </p>
 
-                            <!-- Areas We Serve – Image on right & BIG on desktop -->
+                            <!-- Areas We Serve – BIG IMAGE ON RIGHT, FIXED POSITION -->
                             <h3>Areas We Serve</h3>
-                            <div class="row align-items-center">
-                                <!-- Text -->
+                            <div class="row align-items-start"> <!-- changed to align-items-start so image doesn't stretch vertically -->
+
+                                <!-- Text Column (Left) -->
                                 <div class="col-lg-6 col-md-12">
                                     <p>We deliver fuel fast to:</p>
                                     <ul class="list1">
@@ -204,17 +205,18 @@
                                     </ul>
                                 </div>
 
-                                <!-- BIG IMAGE ON DESKTOP -->
+                                <!-- Image Column (Right) – NOW MASSIVE ON DESKTOP -->
                                 <div class="col-lg-6 col-md-12 text-center">
-                                    <img src="images/barstow-ca-fuel-delivery.jpg"
-                                         alt="Barstow Towing 24/7 emergency fuel delivery truck in Barstow CA"
-                                         class="img-responsive center-block fuel-delivery-image-desktop"
-                                         style="border-radius:15px; box-shadow:0 15px 40px rgba(0,0,0,0.25);">
+                                    <div class="fuel-image-container">
+                                        <img src="images/barstow-ca-fuel-delivery.jpg"
+                                             alt="Barstow Towing 24/7 emergency fuel delivery truck serving Barstow CA"
+                                             class="img-fluid rounded shadow-lg w-100"
+                                             style="max-height: 680px; object-fit: contain; border-radius: 18px;">
+                                    </div>
                                 </div>
+
                             </div>
                             <!-- End Areas Section -->
-
-                        </div>
 
                         <!-- Sidebar Call Box -->
                         <div class="col-md-4">
@@ -309,3 +311,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
