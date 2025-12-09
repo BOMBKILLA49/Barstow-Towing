@@ -59,49 +59,91 @@
     <div id="canvas">
         <div id="box_wrapper">
 
-            <!-- FIXED HEADER & NAVIGATION -->
-            <header class="page_header header_darkgrey toggler_right">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12 display_table">
-                            <!-- Logo -->
-                            <div class="header_left_logo display_table_cell">
-                                <a href="./" class="logo">
-                                    <img src="images/logo.png" alt="Barstow Towing">
-                                    <span class="logo_text">
-                                        <span class="highlight">BARSTOW TOWING</span><br>
-                                        <span>24/7 Fuel Delivery</span>
-                                    </span>
-                                </a>
-                            </div>
+			<header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-left text-md-center">
+							<div class="logo_wrapper">
 
-                            <!-- Mobile Menu Toggle
-                            <span class="toggle_menu"><span></span></span>
+								<a href="./" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="highlight">BARSTOW TOWING</span>
+										<span>24/7 Heavy Duty Towing Services</span>
+									</span>
+								</a>
 
-                            <!-- Main Navigation -->
-                            <nav class="mainmenu_wrapper display_table_cell text-center">
+							</div>
+							<!-- header toggler -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+                            <!-- main nav start -->
+                            <nav class="mainmenu_wrapper">
                                 <ul class="mainmenu nav sf-menu">
-                                    <li><a href="./">Home</a></li>
-                                    <li><a href="#about">About</a></li>
+                                    <li class="active">
+                                        <a href="#box_wrapper">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about">About</a>
+                                    </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+                                        <a href="#services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">States</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a href="#">New Mexico</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="https://albuquerque-towing.com">Albuquerque</a></li>
+                                                    <li><a href="https://loslunastowing.com">Los Lunas</a></li>
+                                                    <li><a href="https://santafe-towing.com">Santa Fe</a></li>
+                                                    <li><a href="https://taostowing.com">Taos</a></li>
+                                                    <li><a href="https://belentowing.com">Belen</a></li>
+                                                    <li><a href="https://galluptowing.com">Gallup</a></li>
+                                                    <li><a href="https://ruidosotowing.com">Ruidoso</a></li>
+                                                    <li><a href="https://alamogordotowing.com">Alamogordo</a></li>
+                                                    <li><a href="https://socorrotowing.com">Socorro</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">Nevada</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="https://primmtowing.com">Primm</a></li>
+                                                    <li><a href="https://primmtowing.com">Las Vegas</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">California</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="https://barstowtowing.com">Barstow</a></li>
+                                                    <li><a href="https://barstowtowing.com">Victorville</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="barstow-ca-towing.html">Car Towing</a></li>
                                             <li><a href="barstow-ca-heavy-duty-towing.html">Heavy Duty Towing</a></li>
                                             <li><a href="barstow-motorcycle-towing.html">Motorcycle Towing</a></li>
                                             <li><a href="barstow-ca-fuel-delivery.html">Fuel Delivery</a></li>
-                                            <li><a href="barstow-ca-vehicle-lockout-services.html">Lockouts</a></li>
-                                            <li><a href="commercial-tire-services.html">Commercial Tires</a></li>
+                                            <li><a href="barstow-ca-vehicle-lockout-services.html">Lock-Outs</a></li>
+                                            <li><a href="commercial-tire-services.html">Large Commercial Tires</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#quote">Contact</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
+                                    <li>
+                                        <a href="#quote">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#faq">FAQ</a>
+                                    </li>
                                 </ul>
                             </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
+                            <!-- eof main nav -->
+						</div>
+					</div>
+				</div>
+			</header>
 
             <!-- Hero Section -->
             <section class="page_breadcrumbs cs background_cover section_padding_top_100 section_padding_bottom_100" style="background-image:url(images/barstow-ca-fuel-delivery-hero.jpg);background-position:center;">
@@ -252,3 +294,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
