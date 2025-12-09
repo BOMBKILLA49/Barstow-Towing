@@ -23,17 +23,16 @@
     <meta property="og:title" content="24/7 Fuel Delivery Barstow CA - Call (760) 388-2591" />
     <meta property="og:description" content="Fast, affordable emergency fuel & gas delivery in Barstow and surrounding areas. We come to you 24/7!" />
 
-    <!-- Favicons -->
+    <!-- Favicons
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- Big red phone banner + larger image on desktop -->
     <style>
         .top-phone-banner {
             background:#c00;
@@ -45,21 +44,6 @@
         }
         .top-phone-banner a {color:#fff; text-decoration:none;}
         @media (max-width:768px){.top-phone-banner{font-size:24px;padding:12px 0;}}
-
-        /* Make the fuel delivery image BIG on desktop */
-        @media (min-width: 992px) {
-            .fuel-delivery-image-desktop {
-                max-height: 620px !important;
-                width: auto !important;
-            }
-        }
-        @media (max-width: 991px) {
-            .fuel-delivery-image-desktop {
-                max-height: 380px;
-                width: 100%;
-                margin-top: 20px;
-            }
-        }
     </style>
 </head>
 
@@ -74,7 +58,7 @@
     <div id="canvas">
         <div id="box_wrapper">
 
-            <!-- HEADER / NAVIGATION (fixed) -->
+            <!-- HEADER / NAVIGATION (unchanged) -->
             <header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
                 <div class="container-fluid">
                     <div class="row">
@@ -161,14 +145,20 @@
                 </div>
             </section>
 
-            <!-- Main Content -->
-            <section class="ls section_padding_top_100 section_padding_bottom_100">
-                <div class="container">
+            <!-- MAIN CONTENT – YELLOW BACKGROUND REPLACED WITH YOUR IMAGE -->
+            <section class="section_padding_top_100 section_padding_bottom_100"
+                     style="background: url('images/barstow-ca-fuel-delivery.jpg') center center / cover no-repeat fixed;
+                            position: relative;">
+                
+                <!-- Dark overlay for text readability -->
+                <div style="background: rgba(0,0,0,0.65); position: absolute; top:0; left:0; width:100%; height:100%;"></div>
+
+                <div class="container position-relative" style="z-index:2;">
                     <div class="row">
 
                         <div class="col-md-8">
-                            <h2>Fast & Affordable Fuel Delivery in Barstow and Surrounding Areas</h2>
-                            <p>Ran out of gas on I-15, I-40, or anywhere around Barstow? <strong>Barstow Towing</strong> provides <strong>24-hour emergency fuel delivery</strong> throughout Barstow, Victorville, Hesperia, Apple Valley, Daggett, Yermo, Newberry Springs, Baker and the entire High Desert.</p>
+                            <h2 class="text-white">Fast & Affordable Fuel Delivery in Barstow and Surrounding Areas</h2>
+                            <p class="text-white">Ran out of gas on I-15, I-40, or anywhere around Barstow? <strong>Barstow Towing</strong> provides <strong>24-hour emergency fuel delivery</strong> throughout Barstow, Victorville, Hesperia, Apple Valley, Daggett, Yermo, Newberry Springs, Baker and the entire High Desert.</p>
 
                             <ul class="list2 grey checklist">
                                 <li>24/7 emergency fuel & gas delivery</li>
@@ -183,47 +173,31 @@
                                 <a href="tel:7603882591" class="theme_button color1 big_button">(760) 388-2591 – Call Now for Immediate Fuel</a>
                             </p>
 
-                            <!-- Areas We Serve – Image on right & BIG on desktop -->
-                            <h3>Areas We Serve</h3>
-                            <div class="row align-items-center">
-                                <!-- Text -->
-                                <div class="col-lg-6 col-md-12">
-                                    <p>We deliver fuel fast to:</p>
-                                    <ul class="list1">
-                                        <li>Barstow</li>
-                                        <li>Victorville</li>
-                                        <li>Hesperia</li>
-                                        <li>Apple Valley</li>
-                                        <li>Lenwood</li>
-                                        <li>Daggett</li>
-                                        <li>Yermo</li>
-                                        <li>Newberry Springs</li>
-                                        <li>Baker</li>
-                                        <li>I-15 & I-40 Corridor</li>
-                                        <li>Fort Irwin & surrounding areas</li>
-                                    </ul>
-                                </div>
-
-                                <!-- BIG IMAGE ON DESKTOP -->
-                                <div class="col-lg-6 col-md-12 text-center">
-                                    <img src="images/barstow-ca-fuel-delivery.jpg"
-                                         alt="Barstow Towing 24/7 emergency fuel delivery truck in Barstow CA"
-                                         class="img-responsive center-block fuel-delivery-image-desktop"
-                                         style="border-radius:15px; box-shadow:0 15px 40px rgba(0,0,0,0.25);">
-                                </div>
-                            </div>
-                            <!-- End Areas Section -->
-
+                            <h3 class="text-white">Areas We Serve</h3>
+                            <p class="text-white">We deliver fuel fast to:</p>
+                            <ul class="list1 text-white">
+                                <li>Barstow</li>
+                                <li>Victorville</li>
+                                <li>Hesperia</li>
+                                <li>Apple Valley</li>
+                                <li>Lenwood</li>
+                                <li>Daggett</li>
+                                <li>Yermo</li>
+                                <li>Newberry Springs</li>
+                                <li>Baker</li>
+                                <li>I-15 & I-40 Corridor</li>
+                                <li>Fort Irwin & surrounding areas</li>
+                            </ul>
                         </div>
 
                         <!-- Sidebar Call Box -->
                         <div class="col-md-4">
                             <div class="with_padding with_border text-center">
-                                <h3>Out of Gas? Call Now!</h3>
+                                <h3 class="text-white">Out of Gas? Call Now!</h3>
                                 <p class="fontsize_36 highlight topmargin_20">
-                                    <a href="tel:7603882591">(760) 388-2591</a>
+                                    <a href="tel:7603882591" style="color:#fff;">(760) 388-2591</a>
                                 </p>
-                                <p>24 Hours • 7 Days a Week<br><strong>No membership needed</strong></p>
+                                <p class="text-white">24 Hours • 7 Days a Week<br><strong>No membership needed</strong></p>
                                 <p class="topmargin_30">
                                     <a href="tel:7603882591" class="theme_button color1 wide_button">Tap to Call – Fuel in Minutes</a>
                                 </p>
@@ -233,7 +207,7 @@
                 </div>
             </section>
 
-            <!-- Footer -->
+            <!-- Footer (unchanged) -->
             <footer class="page_footer ds section_padding_top_65 section_padding_bottom_50 columns_margin_bottom_40">
                 <div class="container">
                     <div class="row">
@@ -285,7 +259,7 @@
         </div><!-- eof #box_wrapper -->
     </div><!-- eof #canvas -->
 
-    <!-- Schema -->
+    <!-- Schema
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
