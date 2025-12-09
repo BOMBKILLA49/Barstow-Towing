@@ -25,15 +25,15 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- Big red phone banner at the very top -->
+    <!-- Big red phone banner + larger image on desktop -->
     <style>
         .top-phone-banner {
             background:#c00;
@@ -45,6 +45,21 @@
         }
         .top-phone-banner a {color:#fff; text-decoration:none;}
         @media (max-width:768px){.top-phone-banner{font-size:24px;padding:12px 0;}}
+
+        /* Make the fuel delivery image BIG on desktop */
+        @media (min-width: 992px) {
+            .fuel-delivery-image-desktop {
+                max-height: 620px !important;
+                width: auto !important;
+            }
+        }
+        @media (max-width: 991px) {
+            .fuel-delivery-image-desktop {
+                max-height: 380px;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -59,7 +74,7 @@
     <div id="canvas">
         <div id="box_wrapper">
 
-            <!-- HEADER / NAVIGATION (already fixed) -->
+            <!-- HEADER / NAVIGATION (fixed) -->
             <header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
                 <div class="container-fluid">
                     <div class="row">
@@ -168,10 +183,10 @@
                                 <a href="tel:7603882591" class="theme_button color1 big_button">(760) 388-2591 – Call Now for Immediate Fuel</a>
                             </p>
 
-                            <!-- Areas We Serve + Image on the right -->
+                            <!-- Areas We Serve – Image on right & BIG on desktop -->
                             <h3>Areas We Serve</h3>
-                            <div class="row">
-                                <!-- Text on left -->
+                            <div class="row align-items-center">
+                                <!-- Text -->
                                 <div class="col-lg-6 col-md-12">
                                     <p>We deliver fuel fast to:</p>
                                     <ul class="list1">
@@ -185,14 +200,16 @@
                                         <li>Newberry Springs</li>
                                         <li>Baker</li>
                                         <li>I-15 & I-40 Corridor</li>
+                                        <li>Fort Irwin & surrounding areas</li>
                                     </ul>
                                 </div>
 
+                                <!-- BIG IMAGE ON DESKTOP -->
                                 <div class="col-lg-6 col-md-12 text-center">
                                     <img src="images/barstow-ca-fuel-delivery.jpg"
-                                         alt="Barstow Towing 24/7 fuel delivery truck serving Barstow and High Desert"
-                                         class="img-responsive center-block"
-                                         style="border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,0.15); max-height:420px;">
+                                         alt="Barstow Towing 24/7 emergency fuel delivery truck in Barstow CA"
+                                         class="img-responsive center-block fuel-delivery-image-desktop"
+                                         style="border-radius:15px; box-shadow:0 15px 40px rgba(0,0,0,0.25);">
                                 </div>
                             </div>
                             <!-- End Areas Section -->
@@ -292,4 +309,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
